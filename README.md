@@ -86,20 +86,20 @@ Das System analysiert Luftdrucktrends ($\Delta P$) und wendet dynamische Korrekt
 > * ** Andere Städte: Für neue Orte muss logger_database.py im Hintergrund laufen, um schrittweise eine Historie aufzubauen.
 
 ###🏗️ Dateistruktur
-*config.py — Zentrale Konfiguration und Pfadverwaltung mittels python-dotenv.
-*weather_api.py — API-Client, der rohe Wetter-IDs in standardisierte WeatherState-Enums umwandelt.
-*database.py — Initialisierung der SQLite-Datenbankstruktur.
-*logger_database.py — Hintergrunddienst, der alle 3 Stunden neue Daten erfasst.
-*stats.py — Berechnung der Markov-Übergangsmatrix (getrennt nach Tag- und Nachtphasen).
-*analyzer.py — Analyse-Modul zur Berechnung dynamischer Wahrscheinlichkeitsanpassungen basierend auf Luftdruckänderungen.
-*predict.py — Monte-Carlo-Simulationsengine für mehrstufige Zustandsprognosen.
-*validator.py — Backtesting-Modul zur Überprüfung der Modellgenauigkeit anhand historischer Daten.
-*main.py — Hauptskript zur Ausführung der Wettervorhersage.
+* `config.py` — Zentrale Konfiguration und Pfadverwaltung mittels `python-dotenv`.
+* `weather_api.py` — API-Client, der rohe Wetter-IDs in standardisierte `WeatherState`-Enums umwandelt.
+* `database.py` — Initialisierung der SQLite-Datenbankstruktur.
+* `logger_database.py` — Hintergrunddienst, der alle 3 Stunden neue Daten erfasst.
+* `stats.py` — Berechnung der Markov-Übergangsmatrix (getrennt nach Tag- und Nachtphasen).
+* `analyzer.py` — Analyse-Modul zur Berechnung dynamischer Wahrscheinlichkeitsanpassungen basierend auf Luftdruckänderungen.
+* `predict.py` — Monte-Carlo-Simulationsengine für mehrstufige Zustandsprognosen.
+* `validator.py` — Backtesting-Modul zur Überprüfung der Modellgenauigkeit anhand historischer Daten.
+* `main.py` — Hauptskript zur Ausführung der Wettervorhersage.
 
 ### ⚙️ Vorhersagehorizont anpassen
-Der gewünschte Zeitraum für die Prognose kann direkt in der main.py angepasst werden:
-
-# Übergebe die gewünschte Anzahl an Stunden (z. B. 6, 12, 24) als erstes Argument an predict_ladder
+Der gewünschte Zeitraum für die Prognose kann direkt in der `main.py` angepasst werden:
+```python```
+Übergebe die gewünschte Anzahl an Stunden (z. B. 6, 12, 24) als erstes Argument an predict_ladder
 prediction_report = predict_ladder(12, data_history, num_sims=10000)
 
 
