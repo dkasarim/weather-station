@@ -1,6 +1,6 @@
 # 🌤️ Weather Forecasting Engine (Markov Chain & Monte Carlo)
 
-[English](#english) | [German/Deutsch](#deutsch)
+[English](#english) | [German/Deutsch](#german/deutsch)
 
 ---
 
