@@ -32,12 +32,12 @@ The predictive engine continuously calculates pressure trends ($\Delta P$) over 
 
 ### ⚙️ How to Adjust the Forecast Horizon
 You can easily customize the prediction timeframe inside `main.py`:
-```python
-# Pass the desired number of hours (e.g., 6, 12, 24) as the first argument to predict_ladder
+```python```
+Pass the desired number of hours (e.g., 6, 12, 24) as the first argument to predict_ladder
 prediction_report = predict_ladder(12, data_history, num_sims=10000)
 
 
-# 🚀 Quick Start Guide
+### 🚀 Quick Start Guide
 
 1. Clone the repository: 
 git clone [https://github.com/YOUR_USERNAME/weather-station.git](https://github.com/YOUR_USERNAME/weather-station.git)
