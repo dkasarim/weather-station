@@ -1,6 +1,6 @@
 # 🌤️ Weather Forecasting Engine (Markov Chain & Monte Carlo)
 
-[English](#english) | [German/Deutsch](#german/deutsch)
+[English](#english) | [Deutsch](#deutsch)
 
 ---
 
@@ -67,7 +67,7 @@ python logger_database.py
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-## German/Deutsch 
+## Deutsch 
 
 
 🎓 Hinweis zum Lernprojekt:
