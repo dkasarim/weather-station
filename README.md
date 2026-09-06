@@ -103,7 +103,7 @@ Der gewünschte Zeitraum für die Prognose kann direkt in der `main.py` angepass
 prediction_report = predict_ladder(12, data_history, num_sims=10000)
 
 
-###🚀 Schritt-für-Schritt Anleitung
+### 🚀 Schritt-für-Schritt Anleitung
 
 1. Repository klonen:
 git clone [https://github.com/DEIN_USERNAME/weather-station.git](https://github.com/DEIN_USERNAME/weather-station.git)
