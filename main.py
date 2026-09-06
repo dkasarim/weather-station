@@ -1,11 +1,19 @@
 import time
 from datetime import datetime
+from dotenv import load_dotenv
+import os
 from predict import predict_ladder, display_forecast, get_meteo_packet
 from stats import load_data_from_db
 from logger_database import log_weather_db
 
+
+load_dotenv()
+
+API_KEY = os.getenv("WEATHER_API_KEY")
+
+
 # Maximum allowed age for historical data before update
-MAX_AGE_SECONDS = 4 * 3600
+MAX_AGE_SECONDS =  4 * 3600
 
 def ensure_data_freshness():
     """Validates the freshness of the latest database record.
@@ -30,6 +38,11 @@ def ensure_data_freshness():
         hours_outdated = round(age_seconds / 3600, 1)
         print(f"⚠️ Data in database is outdated (last record {hours_outdated} hours ago)")
         print(f"⚙️ Automatic fetching fresh data via API..")
+
+        if not API_KEY:
+            print("🔑 API key missing in environment (.env). Skipping fresh data fetch.")
+            print("🔄 Entering 'Historical Demo Mode'. Running simulation on last stored record.")
+            return data_history
 
         try:
             # Attempt to fetch and store a new record via API
