@@ -76,7 +76,7 @@ Dies ist ein praktisches Lehrprojekt zur Vertiefung von Python, SQLite, Markov-K
 
 
 
-###📌 ProjektübersichtDies ist ein eigenständig entwickeltes Python-System zur Erfassung von Wetterdaten und zur Berechnung lokaler Wettervorhersagen. Anstatt vorgefertigte Vorhersagedienste zu nutzen, speichert das Skript Echtzeit-Meteorologiedaten über die OpenWeatherMap-API in einer lokalen SQLite-Datenbank. Die Berechnung zukünftiger Wetterzustände erfolgt über tageszeitabhängige Markov-Ketten in Kombination mit Monte-Carlo-Simulationen. 
+### 📌 ProjektübersichtDies ist ein eigenständig entwickeltes Python-System zur Erfassung von Wetterdaten und zur Berechnung lokaler Wettervorhersagen. Anstatt vorgefertigte Vorhersagedienste zu nutzen, speichert das Skript Echtzeit-Meteorologiedaten über die OpenWeatherMap-API in einer lokalen SQLite-Datenbank. Die Berechnung zukünftiger Wetterzustände erfolgt über tageszeitabhängige Markov-Ketten in Kombination mit Monte-Carlo-Simulationen. 
 
 Das System analysiert Luftdrucktrends ($\Delta P$) und wendet dynamische Korrekturfaktoren, exponentielle Dämpfung sowie Laplace-Glättung auf historische Übergangsmatrizen an.
 
@@ -85,7 +85,7 @@ Das System analysiert Luftdrucktrends ($\Delta P$) und wendet dynamische Korrekt
 > * ** Enthaltene Demodaten: Eine Datenbank mit Daten für Holzminden (weather.db) ist im Repository enthalten, damit Prognosen direkt getestet werden können.
 > * ** Andere Städte: Für neue Orte muss logger_database.py im Hintergrund laufen, um schrittweise eine Historie aufzubauen.
 
-###🏗️ Dateistruktur
+### 🏗️ Dateistruktur
 * `config.py` — Zentrale Konfiguration und Pfadverwaltung mittels `python-dotenv`.
 * `weather_api.py` — API-Client, der rohe Wetter-IDs in standardisierte `WeatherState`-Enums umwandelt.
 * `database.py` — Initialisierung der SQLite-Datenbankstruktur.
