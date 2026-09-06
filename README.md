@@ -70,9 +70,8 @@ python logger_database.py
 ## Deutsch 
 
 
-🎓 Hinweis zum Lernprojekt:
-
-Dies ist ein praktisches Lehrprojekt zur Vertiefung von Python, SQLite, Markov-Ketten und Monte-Carlo-Simulationen. Es dient als bildungsorientiertes Experiment zur probabilistischen Modellierung und nicht als kommerzieller Wetterdienst.
+>🎓 Hinweis zum Lernprojekt:
+>Dies ist ein praktisches Lehrprojekt zur Vertiefung von Python, SQLite, Markov-Ketten und Monte-Carlo-Simulationen. Es dient als bildungsorientiertes Experiment zur probabilistischen Modellierung und nicht als kommerzieller Wetterdienst.
 
 
 
