@@ -1,6 +1,6 @@
 # 🌤️ Weather Forecasting Engine (Markov Chain & Monte Carlo)
 
-[English](#english) | [German/Deutsch](#deutsch)
+[English](#english) | [Deutsch](#deutsch)
 
 ---
 
@@ -32,12 +32,12 @@ The predictive engine continuously calculates pressure trends ($\Delta P$) over 
 
 ### ⚙️ How to Adjust the Forecast Horizon
 You can easily customize the prediction timeframe inside `main.py`:
-```python
-# Pass the desired number of hours (e.g., 6, 12, 24) as the first argument to predict_ladder
+```python```
+Pass the desired number of hours (e.g., 6, 12, 24) as the first argument to predict_ladder
 prediction_report = predict_ladder(12, data_history, num_sims=10000)
 
 
-# 🚀 Quick Start Guide
+### 🚀 Quick Start Guide
 
 1. Clone the repository: 
 git clone [https://github.com/YOUR_USERNAME/weather-station.git](https://github.com/YOUR_USERNAME/weather-station.git)
@@ -67,7 +67,7 @@ python logger_database.py
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-## German/Deutsch 
+## Deutsch 
 
 
 🎓 Hinweis zum Lernprojekt:
@@ -86,20 +86,20 @@ Das System analysiert Luftdrucktrends ($\Delta P$) und wendet dynamische Korrekt
 > * ** Andere Städte: Für neue Orte muss logger_database.py im Hintergrund laufen, um schrittweise eine Historie aufzubauen.
 
 ###🏗️ Dateistruktur
-*config.py — Zentrale Konfiguration und Pfadverwaltung mittels python-dotenv.
-*weather_api.py — API-Client, der rohe Wetter-IDs in standardisierte WeatherState-Enums umwandelt.
-*database.py — Initialisierung der SQLite-Datenbankstruktur.
-*logger_database.py — Hintergrunddienst, der alle 3 Stunden neue Daten erfasst.
-*stats.py — Berechnung der Markov-Übergangsmatrix (getrennt nach Tag- und Nachtphasen).
-*analyzer.py — Analyse-Modul zur Berechnung dynamischer Wahrscheinlichkeitsanpassungen basierend auf Luftdruckänderungen.
-*predict.py — Monte-Carlo-Simulationsengine für mehrstufige Zustandsprognosen.
-*validator.py — Backtesting-Modul zur Überprüfung der Modellgenauigkeit anhand historischer Daten.
-*main.py — Hauptskript zur Ausführung der Wettervorhersage.
+* `config.py` — Zentrale Konfiguration und Pfadverwaltung mittels `python-dotenv`.
+* `weather_api.py` — API-Client, der rohe Wetter-IDs in standardisierte `WeatherState`-Enums umwandelt.
+* `database.py` — Initialisierung der SQLite-Datenbankstruktur.
+* `logger_database.py` — Hintergrunddienst, der alle 3 Stunden neue Daten erfasst.
+* `stats.py` — Berechnung der Markov-Übergangsmatrix (getrennt nach Tag- und Nachtphasen).
+* `analyzer.py` — Analyse-Modul zur Berechnung dynamischer Wahrscheinlichkeitsanpassungen basierend auf Luftdruckänderungen.
+* `predict.py` — Monte-Carlo-Simulationsengine für mehrstufige Zustandsprognosen.
+* `validator.py` — Backtesting-Modul zur Überprüfung der Modellgenauigkeit anhand historischer Daten.
+* `main.py` — Hauptskript zur Ausführung der Wettervorhersage.
 
 ### ⚙️ Vorhersagehorizont anpassen
-Der gewünschte Zeitraum für die Prognose kann direkt in der main.py angepasst werden:
-
-# Übergebe die gewünschte Anzahl an Stunden (z. B. 6, 12, 24) als erstes Argument an predict_ladder
+Der gewünschte Zeitraum für die Prognose kann direkt in der `main.py` angepasst werden:
+```python```
+Übergebe die gewünschte Anzahl an Stunden (z. B. 6, 12, 24) als erstes Argument an predict_ladder
 prediction_report = predict_ladder(12, data_history, num_sims=10000)
 
 
