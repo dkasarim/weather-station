@@ -4,6 +4,7 @@ __pycache__/
 
 # Database & Environment
 .env
+.idea
 
 # Archive / Drafts
 
