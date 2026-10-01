@@ -40,7 +40,7 @@ prediction_report = predict_ladder(12, data_history, num_sims=10000)
 ### 🚀 Quick Start Guide
 
 1. Clone the repository: 
-git clone [https://github.com/YOUR_USERNAME/weather-station.git](https://github.com/YOUR_USERNAME/weather-station.git)
+git clone [https://github.com/dkasarim/weather-station.git](https://github.com/dkasarim/weather-station.git)
 cd weather-station
 
 2.Install dependencies: 
@@ -106,7 +106,7 @@ prediction_report = predict_ladder(12, data_history, num_sims=10000)
 ### 🚀 Schritt-für-Schritt Anleitung
 
 1. Repository klonen:
-git clone [https://github.com/DEIN_USERNAME/weather-station.git](https://github.com/DEIN_USERNAME/weather-station.git)
+git clone [https://github.com/dkasarim/weather-station.git](https://github.com/dkasarim/weather-station.git)
 cd weather-station
 
 2. Abhängigkeiten installieren:
