@@ -67,10 +67,14 @@ def get_dynamic_biases(current_p_delta, current_state, is_day=True, trend_hours=
 
         # Add  pseudo-observation to avoid zero probability lockout
         smoothed_real_prob = (count + 0.01) / (total_found + 0.01 * len(base_probs)) #Laplace Additive Smoothing
-        base_prob = base_probs.get(state, 0.01)
+        base_prob = base_probs.get(state, 0.1)
+
+        if base_prob == 0:
+            raw_bias = 1.0
+        else:
+            raw_bias = smoothed_real_prob / base_prob
 
         # Calculate final bias ratio bounded to a reasonable window [0.1, 5.0]
-        raw_bias = smoothed_real_prob / base_prob
         biases[state] = round(max(0.1, min(raw_bias, 5.0)), 2)
 
     return biases
